@@ -10,3 +10,10 @@
 - Alpha Vault connects to pool for controlled distribution
 - FCFS = First Come First Served; deposits open for fixed window
 - Pool can be set to activate at a future timestamp
+
+## Alpha Vault FCFS Parameters
+- depositingPoint: unix ts when deposits open
+- maxDepositingCap: total SOL/USDC capacity
+- lockUpPeriod: minimum hold time before claim
+- vestingPeriod: optional linear vesting after lock-up
+- individualDepositingCap: per-wallet limit
