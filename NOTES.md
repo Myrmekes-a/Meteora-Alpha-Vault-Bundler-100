@@ -17,3 +17,10 @@
 - lockUpPeriod: minimum hold time before claim
 - vestingPeriod: optional linear vesting after lock-up
 - individualDepositingCap: per-wallet limit
+
+## Wallet Distribution Strategy
+- Generate N wallets deterministically from seed
+- Fund each with SOL for transaction fees
+- Distribute quote tokens proportionally
+- Optional randomization to avoid bot detection
+- Gather back remaining SOL after operations
