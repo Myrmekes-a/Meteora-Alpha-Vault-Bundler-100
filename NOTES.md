@@ -24,3 +24,13 @@
 - Distribute quote tokens proportionally
 - Optional randomization to avoid bot detection
 - Gather back remaining SOL after operations
+
+## Token Launch Flow
+1. Mint SPL token with Metaplex metadata
+2. Create DAMM v2 pool (token / SOL or USDC)
+3. Attach Alpha Vault with FCFS config
+4. Set pool activation point timestamp
+5. Distribute quote tokens to wallets
+6. Open deposit window -> wallets deposit
+7. Fill vault after deposit window closes
+8. Wait for lock-up -> claim tokens
