@@ -34,3 +34,10 @@
 6. Open deposit window -> wallets deposit
 7. Fill vault after deposit window closes
 8. Wait for lock-up -> claim tokens
+
+## DAMM v2 SDK Notes
+- Use @meteora-ag/cp-amm-sdk for pool creation
+- Requires initial price and liquidity range
+- Base / Quote token ordering matters
+- Must use @solana/web3.js 1.69.x for compatibility
+- Pool fees configurable at creation time
