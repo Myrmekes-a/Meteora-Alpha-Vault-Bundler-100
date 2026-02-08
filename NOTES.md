@@ -41,3 +41,10 @@
 - Base / Quote token ordering matters
 - Must use @solana/web3.js 1.69.x for compatibility
 - Pool fees configurable at creation time
+
+## Transaction Handling Strategy
+- Blockhash expires after ~150 slots (~60 seconds)
+- Implement retry loop for fill-vault command
+- Batch multiple deposits into single transactions where possible
+- Priority fees: estimate via getRecentPrioritizationFees
+- Use ComputeBudgetProgram for CU limit + fee
