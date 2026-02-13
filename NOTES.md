@@ -48,3 +48,11 @@
 - Batch multiple deposits into single transactions where possible
 - Priority fees: estimate via getRecentPrioritizationFees
 - Use ComputeBudgetProgram for CU limit + fee
+
+## Bundle Timing Analysis
+- depositWindowSeconds: ~300s (configurable)
+- fillWindow: opens immediately after deposit closes
+- lockUpPeriod: 86400s default (1 day)
+- vestingPeriod: optional, linear release
+- Total mainnet flow: approximately 2-3 hours
+- Set POOL_ACTIVATION_POINT_TS = 10800 for 3h delay
