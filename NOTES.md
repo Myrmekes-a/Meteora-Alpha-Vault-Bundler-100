@@ -56,3 +56,10 @@
 - vestingPeriod: optional, linear release
 - Total mainnet flow: approximately 2-3 hours
 - Set POOL_ACTIVATION_POINT_TS = 10800 for 3h delay
+
+## LP Fee Monitoring
+- DAMM v2 accumulates trading fees in LP positions
+- Fees split between base and quote tokens
+- Collect via SDK claimFee / collectFees method
+- Build UI display for uncollected fee amounts
+- Schedule periodic collection or trigger manually
