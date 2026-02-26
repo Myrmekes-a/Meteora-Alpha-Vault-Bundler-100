@@ -63,3 +63,11 @@
 - Collect via SDK claimFee / collectFees method
 - Build UI display for uncollected fee amounts
 - Schedule periodic collection or trigger manually
+
+## Architecture Decisions
+- Language: TypeScript (type safety + Solana SDK support)
+- Runtime: tsx for direct execution without compile step
+- State persistence: MongoDB + JSON files under data/
+- Dashboard: Next.js 14 with App Router
+- Real-time events: Helius LaserStream gRPC
+- Chart: lightweight-charts library
