@@ -71,3 +71,10 @@
 - Dashboard: Next.js 14 with App Router
 - Real-time events: Helius LaserStream gRPC
 - Chart: lightweight-charts library
+
+## Solana RPC Configuration
+- Use dedicated RPC for mainnet (not public endpoint)
+- Helius RPC recommended for reliability
+- LaserStream requires Helius Developer or Business plan
+- devnet: standard public RPC is sufficient for testing
+- Store RPC URL in SOLANA_RPC_URL env variable
