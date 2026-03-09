@@ -78,3 +78,11 @@
 - LaserStream requires Helius Developer or Business plan
 - devnet: standard public RPC is sufficient for testing
 - Store RPC URL in SOLANA_RPC_URL env variable
+
+## UI / Dashboard Planning
+- Main page: real-time price chart + event log
+- Launch progress stepper: mint -> pool -> vault -> fill -> claim
+- Actions panel: trigger each pipeline step manually
+- Settings modals: token / pool / vault / distribution config
+- Bundlers panel: per-wallet deposit status
+- Toast notifications for tx success / failure
