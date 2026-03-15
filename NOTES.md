@@ -86,3 +86,12 @@
 - Settings modals: token / pool / vault / distribution config
 - Bundlers panel: per-wallet deposit status
 - Toast notifications for tx success / failure
+
+## API Routes Design
+- GET /api/launch-state -> current pipeline JSON
+- GET /api/pool-events -> event history array
+- GET /api/pool-events/stream -> SSE live feed
+- GET /api/chart-candles -> OHLCV candle data
+- GET /api/pool-stats -> volume / price / liquidity
+- GET /api/lp-fees -> uncollected fee amounts
+- POST /api/actions/[action] -> trigger pipeline step
