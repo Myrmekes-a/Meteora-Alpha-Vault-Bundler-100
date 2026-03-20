@@ -95,3 +95,13 @@
 - GET /api/pool-stats -> volume / price / liquidity
 - GET /api/lp-fees -> uncollected fee amounts
 - POST /api/actions/[action] -> trigger pipeline step
+
+## Pre-Implementation Checklist
+- [x] Architecture decided
+- [x] API routes designed
+- [x] UI layout planned
+- [x] SDK versions confirmed
+- [ ] Set up project structure
+- [ ] Implement backend commands
+- [ ] Build Next.js dashboard
+- [ ] Test full flow on devnet
