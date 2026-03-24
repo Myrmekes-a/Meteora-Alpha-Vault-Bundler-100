@@ -1,0 +1,61 @@
+{
+  "name": "meteora-alpha-vault-bundler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "overrides": {
+    "@solana/web3.js": "1.69.0"
+  },
+  "scripts": {
+    "dev": "cd ui && next dev -p 3030",
+    "build": "cd ui && next build",
+    "start": "cd ui && next start -p 3030",
+    "dev:backend": "NODE_NO_WARNINGS=1 tsx src/main.ts",
+    "launch:dammv2": "NODE_NO_WARNINGS=1 tsx src/launch/damm-v2-launch.ts",
+    "launch:with-alpha-vault": "NODE_NO_WARNINGS=1 tsx src/flows/launch-with-alpha-vault.ts",
+    "mint:token": "tsx src/commands/token-mint.ts",
+    "create:alpha-vault:fcfs": "NODE_NO_WARNINGS=1 tsx src/launch/alpha-vault-fcfs.ts",
+    "init:launch-state": "tsx src/commands/init-launch-state.ts",
+    "distribute:funds": "tsx src/commands/distribute-funds.ts",
+    "deposit:to-vault": "tsx src/commands/deposit-to-vault.ts",
+    "distribute:and:deposit": "tsx src/flows/distribute-and-deposit.ts",
+    "wait:deposit:then:fill": "tsx src/flows/wait-deposit-then-fill.ts",
+    "fill:vault": "tsx src/commands/fill-vault.ts",
+    "claim:tokens": "tsx src/commands/claim-tokens.ts",
+    "sell:pool:token": "tsx src/commands/sell-all-distributed-wallets.ts",
+    "gather:funds": "tsx src/commands/gather-funds.ts",
+    "rebuild:chart-history": "tsx src/commands/rebuild-chart-history.ts",
+    "listen:pool": "tsx src/commands/listen-pool-events.ts",
+    "collect:lp-fees": "tsx src/commands/collect-lp-fees.ts",
+    "get:lp-fees": "tsx src/commands/get-lp-fees.ts"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^2.13.0",
+    "@meteora-ag/alpha-vault": "^1.1.15",
+    "@meteora-ag/cp-amm-sdk": "^1.3.6",
+    "@phosphor-icons/react": "^2.1.10",
+    "@solana/spl-token": "^0.4.14",
+    "@solana/web3.js": "1.69.0",
+    "bn.js": "^5.2.3",
+    "bs58": "^6.0.0",
+    "dotenv": "^17.3.1",
+    "helius-laserstream": "^0.3.0",
+    "lightweight-charts": "^4.2.0",
+    "mongodb": "^7.1.0",
+    "next": "14.2.24",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsx": "^4.21.0",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  }
+}
