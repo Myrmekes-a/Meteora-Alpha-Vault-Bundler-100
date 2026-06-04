@@ -1,4 +1,11 @@
-﻿# Changelog
+﻿## [0.9.0] - 2026-06-04
+### Changed
+- Updated all dependencies to latest compatible versions
+- Improved WebSocket reconnection stability
+### Fixed
+- Memo program integration race condition
+
+# Changelog
 
 ## [0.8.0] - 2026-05-30
 ### Added
@@ -8,3 +15,4 @@
 ### Fixed
 - TypeScript strict mode errors in vault commands
 - Priority fee calculation edge cases
+
