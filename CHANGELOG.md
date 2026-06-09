@@ -1,4 +1,10 @@
-﻿## [0.9.5] - 2026-06-09
+﻿## [0.9.7] - 2026-06-09
+### Fixed
+- Off-by-one in deposit window calculation
+- Token distribution rounding for odd wallet counts
+- UI price chart not refreshing after fill
+
+## [0.9.5] - 2026-06-09
 ### Changed
 - Refactored vault interaction module for readability
 - Unified transaction confirmation helper
@@ -25,6 +31,7 @@
 ### Fixed
 - TypeScript strict mode errors in vault commands
 - Priority fee calculation edge cases
+
 
 
 
