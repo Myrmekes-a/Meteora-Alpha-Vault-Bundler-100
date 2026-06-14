@@ -1,4 +1,11 @@
-﻿## [0.9.9] - 2026-06-14
+﻿## [1.0.0] - 2026-06-14
+### Added
+- Stable v1.0.0 release
+- Full DAMM v2 + Alpha Vault FCFS pipeline
+### Changed
+- Final polish and version bump
+
+## [0.9.9] - 2026-06-14
 ### Changed
 - Expanded README with full step-by-step guide
 - Documented all .env variables
@@ -36,6 +43,7 @@
 ### Fixed
 - TypeScript strict mode errors in vault commands
 - Priority fee calculation edge cases
+
 
 
 
