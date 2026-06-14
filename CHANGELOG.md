@@ -1,4 +1,9 @@
-﻿## [0.9.7] - 2026-06-09
+﻿## [0.9.9] - 2026-06-14
+### Changed
+- Expanded README with full step-by-step guide
+- Documented all .env variables
+
+## [0.9.7] - 2026-06-09
 ### Fixed
 - Off-by-one in deposit window calculation
 - Token distribution rounding for odd wallet counts
@@ -31,6 +36,7 @@
 ### Fixed
 - TypeScript strict mode errors in vault commands
 - Priority fee calculation edge cases
+
 
 
 
